@@ -1,0 +1,4 @@
+<h1>Please select time slot bellow</h1>
+<div *ngFor="let slot of slots; let i = index">
+  <button class="button" [ngStyle]="{'background-color': slot.color}" (click)="openDialog(i)">{{slot.time}}</button>
+</div>
